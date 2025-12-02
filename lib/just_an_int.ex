@@ -1,8 +1,5 @@
 defmodule JustAnInt do
-  @moduledoc """
-  Simple realization of `RaftDB.Raft.StateMachine.Statable`
-  """
-
+  @moduledoc false
   @behaviour RaftDB.Raft.StateMachine.Statable
   def new, do: 0
   def command(i, {:set, j}), do: {i, j}
