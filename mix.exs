@@ -65,7 +65,6 @@ defmodule RaftDB.MixProject do
       {:excoveralls, "~> 0.18", only: :test},
 
       # Linting & formatting
-      # {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:credo, ">= 1.7.5", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false},
       {:ex_check, "~> 0.16.0", only: [:dev], runtime: false}
@@ -77,13 +76,13 @@ defmodule RaftDB.MixProject do
   end
 
   def description do
-    "RaftDB is an in-memory distributed key-value data store"
+    "RaftDB is an in-memory distributed data store"
   end
 
   def package do
     [
       files: ["lib", "mix.exs", "LICENSE*", "README*", "version"],
-      maintainers: ["Max Barsukov <maxbarsukov@bk.ru>"],
+      maintainers: [""],
       licenses: ["MIT"],
       links: %{"GitHub" => @github_url}
     ]
